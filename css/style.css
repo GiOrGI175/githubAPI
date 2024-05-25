@@ -1,0 +1,227 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --txtColor: #697c9a;
+  --txtColor2: #4b6a9b;
+  --txtColor3: #222731;
+  --txtColor4: #222731;
+  --txtColor5: #2b3442;
+  --txtcolor6: #0079ff;
+  --txtColor7: #4b6a9b;
+  --whiteColor: #fefefe;
+  --btnColor: #0079ff;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main_page {
+  max-width: 1440px;
+  /*  */
+  /* border: 2px solid black; */
+  /*  */
+  margin: 0 auto;
+}
+
+.dark_mode {
+  margin: 0 auto;
+  max-width: 730px;
+  height: 38px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dark_mode > h1 {
+  font-family: 'Space Mono', monospace;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 38px;
+  color: var(--txtColor3);
+}
+
+.dark_mode .them_box {
+  display: flex;
+  align-items: center;
+  font-family: 'Space Mono', monospace;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 19.25px;
+  letter-spacing: 2.5px;
+  color: var(--txtColor);
+}
+
+.them_box img {
+  margin-left: 16px;
+}
+
+.iput_box {
+  display: flex;
+  align-items: center;
+  max-width: 730px;
+  height: 69px;
+  border-radius: 15px;
+  margin: 0 auto;
+  display: flex;
+  background-color: var(--whiteColor);
+  box-shadow: 0px 16px 30px -10px #4660bb33;
+  /* box-shadow: 0px 16px 30px -10px #4660bb33; */
+}
+
+.iput_box input {
+  width: 100%;
+  height: 100%;
+  padding-left: 25px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-family: 'Space Mono', monospace;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: left;
+  color: var(--txtColor4);
+}
+
+.iput_box input::placeholder {
+  font-family: 'Space Mono', monospace;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: left;
+  color: var(--txtColor2);
+}
+
+.Search_btn {
+  width: 106px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  margin: 10px;
+  font-family: 'Space Mono', monospace;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 23.7px;
+  text-align: center;
+  background-color: var(--btnColor);
+}
+
+.iput_box img {
+  margin-left: 32px;
+}
+
+.info {
+  max-width: 730px;
+  height: fit-content;
+  margin: 0 auto;
+}
+
+.users_info_box {
+  margin: 0 auto;
+  padding: 44px 48px 32px 48px;
+  display: flex;
+}
+
+.textContentInfo {
+  margin-left: 37px;
+  display: flex;
+  flex-direction: column;
+}
+
+.users_info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.person_name h2 {
+  font-family: 'Space Mono', monospace;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 38.51px;
+  color: var(--txtColor5);
+}
+
+.person_name p {
+  font-family: 'Space Mono', monospace;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.7px;
+  color: var(--txtcolor6);
+}
+
+.users_info_box span {
+  font-family: 'Space Mono', monospace;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22.22px;
+  text-align: right;
+  color: var(--txtColor);
+}
+
+.bio {
+  width: 480px;
+  height: fit-content;
+  margin-top: 20px;
+  font-family: 'Space Mono', monospace;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: left;
+  color: var(--txtColor7);
+}
+
+.repos_folower {
+  width: 480px;
+  height: 85px;
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.repos_folower ul {
+  margin-right: 83px;
+  display: flex;
+}
+
+.repos_folower ul li {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Space Mono', monospace;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19.25px;
+  text-align: left;
+}
+
+.repos_folower ul li > span {
+  font-family: 'Space Mono', monospace;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 32.58px;
+  text-align: left;
+  color: var(--txtColor5);
+}
+
+.repos_folower ul li:first-child {
+  margin-right: 99px;
+}
+
+.repos_folower ul li:last-child {
+  margin-left: 82px;
+}
