@@ -13,6 +13,7 @@
   --txtcolor6: #0079ff;
   --txtColor7: #4b6a9b;
   --whiteColor: #fefefe;
+  --whiteColor2: #f6f8ff;
   --btnColor: #0079ff;
 }
 
@@ -41,6 +42,7 @@ main {
   margin: 0 auto;
   max-width: 730px;
   height: 38px;
+  margin-bottom: 36px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -127,11 +129,14 @@ main {
 .info {
   max-width: 730px;
   height: fit-content;
+  border-radius: 15px;
   margin: 0 auto;
+  box-shadow: 0px 16px 30px -10px #4660bb33;
 }
 
 .users_info_box {
   margin: 0 auto;
+  margin-top: 24px;
   padding: 44px 48px 32px 48px;
   display: flex;
 }
@@ -188,10 +193,12 @@ main {
 .repos_folower {
   width: 480px;
   height: 85px;
+  border-radius: 10px;
   margin-top: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--whiteColor2);
 }
 
 .repos_folower ul {
@@ -207,6 +214,7 @@ main {
   font-weight: 400;
   line-height: 19.25px;
   text-align: left;
+  color: var(--txtColor2);
 }
 
 .repos_folower ul li > span {
@@ -224,4 +232,187 @@ main {
 
 .repos_folower ul li:last-child {
   margin-left: 82px;
+}
+
+.navbar {
+  min-width: 480px;
+  margin-top: 37px;
+  display: flex;
+}
+
+.navbar ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.navbar ul li img {
+  margin-right: 20px;
+}
+
+.second_nav {
+  margin-left: 100px;
+}
+
+@media screen and (max-width: 735px) {
+  .dark_mode {
+    max-width: 573px;
+    height: 38px;
+  }
+
+  .iput_box {
+    max-width: 573px;
+  }
+
+  .info {
+    max-width: 573px;
+    min-height: 481px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .users_info_box {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .textContentInfo {
+    margin-left: 0px;
+  }
+
+  .users_info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .users_foto {
+    position: relative;
+    left: -200px;
+    bottom: 155px;
+  }
+
+  .users_info span {
+    width: 175px;
+    margin-top: 4px;
+    text-align: left;
+  }
+
+  .position_absolute {
+    position: absolute;
+  }
+
+  .bio {
+    width: 493px;
+    margin-top: 24px;
+  }
+
+  .repos_folower {
+    width: 493px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .dark_mode {
+    max-width: 327px;
+    height: 38px;
+  }
+
+  .iput_box {
+    width: 327px;
+    height: 60px;
+  }
+
+  .info {
+    max-width: 327px;
+    min-height: 517px;
+  }
+
+  .person_name h2 {
+    font-size: 16px;
+    height: 24px;
+    margin-left: 90px;
+    margin-bottom: 4px;
+  }
+
+  .person_name p {
+    height: 24px;
+    margin-left: 90px;
+  }
+
+  .users_info_box {
+    padding: 32px 24px 48px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .textContentInfo {
+    width: 327px;
+  }
+
+  .users_info {
+    width: 327px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .users_foto {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    left: -120px;
+    bottom: 210px;
+  }
+
+  .users_info span {
+    width: auto;
+    height: 24px;
+    margin-top: 0px;
+    margin-left: 90px;
+    text-align: left;
+  }
+
+  .bio {
+    width: 279px;
+    margin-top: 33px;
+  }
+
+  .repos_folower {
+    width: 279px;
+    margin-top: 23px;
+    justify-content: space-between;
+  }
+
+  .repos_folower ul {
+    margin-right: 0px;
+  }
+
+  .repos_folower ul li:first-child {
+    width: 79px;
+    height: 48px;
+    margin-right: 10px;
+  }
+
+  .repos_folower ul li:last-child {
+    width: 89px;
+    height: 48px;
+    margin-left: 40px;
+  }
+
+  .navbar {
+    min-width: 185px;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .second_nav {
+    margin-left: 0px;
+  }
 }
