@@ -328,7 +328,7 @@ main {
   }
 
   .info {
-    max-width: 327px;
+    width: 327px;
     min-height: 517px;
   }
 
@@ -352,11 +352,11 @@ main {
   }
 
   .textContentInfo {
-    width: 327px;
+    width: 275px;
   }
 
   .users_info {
-    width: 327px;
+    width: 300px;
     flex-direction: column;
     justify-content: center;
     align-items: start;
