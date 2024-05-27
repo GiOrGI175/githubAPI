@@ -15,6 +15,7 @@
   --whiteColor: #fefefe;
   --whiteColor2: #f6f8ff;
   --btnColor: #0079ff;
+  --red: #f74646;
 }
 
 body {
@@ -253,6 +254,21 @@ main {
 .second_nav {
   margin-left: 100px;
 }
+
+/*  */
+/* js class */
+
+.no_Esult {
+  font-family: 'Space Mono', monospace;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 22.22px;
+  text-align: left;
+  color: #f74646;
+}
+
+/* js class */
+/*  */
 
 @media screen and (max-width: 735px) {
   .dark_mode {
