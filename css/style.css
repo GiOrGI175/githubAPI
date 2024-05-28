@@ -113,6 +113,7 @@ main {
   width: 106px;
   height: 50px;
   border-radius: 10px;
+  padding: 0px 24px;
   border: none;
   margin: 10px;
   font-family: 'Space Mono', monospace;
@@ -121,6 +122,7 @@ main {
   line-height: 23.7px;
   text-align: center;
   background-color: var(--btnColor);
+  color: var(--whiteColor);
 }
 
 .iput_box img {
@@ -140,6 +142,20 @@ main {
   margin-top: 24px;
   padding: 44px 48px 32px 48px;
   display: flex;
+}
+
+.position_absolute {
+  width: 117px;
+  height: 117px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.users_foto {
+  width: 117px;
+  height: 117px;
+  object-fit: cover;
+  background-position: center;
 }
 
 .textContentInfo {
@@ -256,18 +272,23 @@ main {
 }
 
 /*  */
+
 /* js class */
 
-.no_Esult {
-  font-family: 'Space Mono', monospace;
+.no_REsult {
+  position: relative;
+  top: -45px;
+  left: 855px;
+  font-family: 'Space Mono';
   font-size: 15px;
   font-weight: 700;
   line-height: 22.22px;
   text-align: left;
-  color: #f74646;
+  color: var(--red);
 }
 
 /* js class */
+
 /*  */
 
 @media screen and (max-width: 735px) {
@@ -298,9 +319,12 @@ main {
 
   .textContentInfo {
     margin-left: 0px;
+    position: absolute;
+    z-index: 2;
   }
 
   .users_info {
+    margin-top: 25px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -319,12 +343,21 @@ main {
   }
 
   .position_absolute {
-    position: absolute;
+    position: relative;
+    top: -150px;
+    left: -190px;
+    z-index: 1;
+  }
+
+  .users_foto {
+    position: relative;
+    top: -0px;
+    left: -0px;
   }
 
   .bio {
     width: 493px;
-    margin-top: 24px;
+    margin-top: 40px;
   }
 
   .repos_folower {
@@ -341,6 +374,36 @@ main {
   .iput_box {
     width: 327px;
     height: 60px;
+  }
+
+  .Search_btn {
+    width: 84px;
+    height: 46px;
+    padding: 12px;
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20.73px;
+    text-align: center;
+  }
+
+  .position_absolute {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    top: -200px;
+    left: -105px;
+    z-index: 1;
+    border: 2px solid black;
+  }
+
+  .users_foto {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 0px;
+    left: -100px;
+    margin-left: 118px;
   }
 
   .info {
