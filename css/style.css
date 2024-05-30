@@ -15,6 +15,7 @@
   --whiteColor: #fefefe;
   --whiteColor2: #f6f8ff;
   --btnColor: #0079ff;
+  --btnHoverColor: #60abff;
   --red: #f74646;
 }
 
@@ -63,10 +64,25 @@ main {
   line-height: 19.25px;
   letter-spacing: 2.5px;
   color: var(--txtColor);
+  cursor: pointer;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-delay: 0.1s;
+  transition-timing-function: ease;
+}
+.dark_mode .them_box:hover {
+  color: var(--txtColor3);
 }
 
 .them_box img {
   margin-left: 16px;
+}
+
+.logo {
+  transition-property: all;
+  transition-duration: 1s;
+  transition-delay: 0.1s;
+  transition-timing-function: ease;
 }
 
 .iput_box {
@@ -94,6 +110,7 @@ main {
   line-height: 25px;
   text-align: left;
   color: var(--txtColor4);
+  cursor: pointer;
 }
 
 .iput_box input::placeholder {
@@ -119,6 +136,14 @@ main {
   text-align: center;
   background-color: var(--btnColor);
   color: var(--whiteColor);
+  cursor: pointer;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-delay: 0.1s;
+  transition-timing-function: ease;
+}
+.Search_btn:hover {
+  background-color: var(--btnHoverColor);
 }
 
 .iput_box img {

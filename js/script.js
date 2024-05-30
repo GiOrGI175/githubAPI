@@ -49,8 +49,6 @@ async function githubusers() {
 
   let dataarray = Array.from(data.created_at);
 
-  console.log(dataarray);
-
   let dataNumber = dataarray.slice(8, 10);
   let number = dataNumber.join('');
 
@@ -171,3 +169,21 @@ async function githubusers() {
   //! add location link twitt job_palace >]
 }
 githubusers();
+
+let moonBox = document.getElementById('moonbox');
+
+moonBox.addEventListener('mouseenter', () => {
+  let moonimg = document.querySelector('.logo');
+
+  setTimeout(() => {
+    moonimg.src = './img/darkMoon.svg';
+  }, 700);
+});
+
+moonBox.addEventListener('mouseleave', () => {
+  let moonimg = document.querySelector('.logo');
+
+  setTimeout(() => {
+    moonimg.src = './img/moon.svg';
+  }, 700);
+});
