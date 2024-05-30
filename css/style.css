@@ -33,9 +33,6 @@ main {
 
 .main_page {
   max-width: 1440px;
-  /*  */
-  /* border: 2px solid black; */
-  /*  */
   margin: 0 auto;
 }
 
@@ -82,7 +79,6 @@ main {
   display: flex;
   background-color: var(--whiteColor);
   box-shadow: 0px 16px 30px -10px #4660bb33;
-  /* box-shadow: 0px 16px 30px -10px #4660bb33; */
 }
 
 .iput_box input {
@@ -147,7 +143,7 @@ main {
 
 .gridBox_3 {
   grid-column: 2;
-  grid-row: 2;
+  grid-row: 1;
 }
 
 .gridBox_4 {
@@ -165,12 +161,12 @@ main {
   height: fit-content;
   border-radius: 15px;
   margin: 0 auto;
+  margin-top: 24px;
   box-shadow: 0px 16px 30px -10px #4660bb33;
 }
 
 .users_info_box {
   margin: 0 auto;
-  margin-top: 24px;
   padding: 44px 48px 32px 48px;
 }
 
@@ -234,7 +230,8 @@ main {
 .bio {
   width: 480px;
   height: fit-content;
-  margin-top: 20px;
+  margin-top: 83px;
+  margin-left: 37px;
   font-family: 'Space Mono', monospace;
   text-align: left;
   font-size: 15px;
@@ -302,6 +299,20 @@ main {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  font-family: 'Space Mono', monospace;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22.22px;
+  text-align: left;
+  color: var(--txtColor7);
+}
+
+#twiter {
+  width: 150px;
+}
+
+#workpalace {
+  width: 150px;
 }
 
 .navbar ul li img {
@@ -309,7 +320,7 @@ main {
 }
 
 .second_nav {
-  margin-left: 100px;
+  margin-left: 65px;
 }
 
 /*  */
@@ -317,9 +328,7 @@ main {
 /* js class */
 
 .no_REsult {
-  position: relative;
-  top: -45px;
-  left: 855px;
+  width: 100px;
   font-family: 'Space Mono';
   font-size: 15px;
   font-weight: 700;
@@ -328,11 +337,19 @@ main {
   color: var(--red);
 }
 
+.atag {
+  text-decoration: none;
+  color: var(--txtColor7);
+}
+.atag:hover {
+  text-decoration: underline;
+}
+
 /* js class */
 
 /*  */
 
-@media screen and (max-width: 735px) {
+@media screen and (max-width: 790px) {
   .dark_mode {
     max-width: 573px;
     height: 38px;
@@ -340,6 +357,27 @@ main {
 
   .iput_box {
     max-width: 573px;
+  }
+
+  .info {
+    max-width: 573px;
+    height: fit-content;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-top: 24px;
+    box-shadow: 0px 16px 30px -10px #4660bb33;
+  }
+
+  .users_info_box {
+    margin: 0 auto;
+    padding: 40px;
+  }
+
+  .users_info {
+    height: 117px;
+    justify-content: center;
+    margin-left: 0px;
+    margin-right: 159px;
   }
 
   .display_grid {
@@ -359,85 +397,48 @@ main {
   }
 
   .gridBox_3 {
-    grid-column: 2;
+    grid-column: 1 / 3;
     grid-row: 2;
   }
 
   .gridBox_4 {
-    grid-column: 2;
+    grid-column: 1/3;
     grid-row: 3;
   }
 
   .gridBox_5 {
-    grid-column: 2;
+    grid-column: 1/3;
     grid-row: 4;
   }
 
-  /* .info {
-    max-width: 573px;
-    min-height: 481px;
-    display: flex;
+  .person_name {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  } */
-
-  /* .users_info_box {
-    padding: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
-  .textContentInfo {
+  .person_name > span {
     margin-left: 0px;
-    position: absolute;
-    z-index: 2;
-  }
-
-  .users_info {
-    margin-top: 25px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .users_foto {
-    position: relative;
-    left: -200px;
-    bottom: 155px;
-  }
-
-  .users_info span {
-    width: 175px;
-    margin-top: 4px;
     text-align: left;
-  }
-
-  .position_absolute {
-    position: relative;
-    top: -150px;
-    left: -190px;
-    z-index: 1;
-  }
-
-  .users_foto {
-    position: relative;
-    top: -0px;
-    left: -0px;
   }
 
   .bio {
     width: 493px;
-    margin-top: 40px;
+    margin-top: 24px;
+    margin-left: 0px;
   }
 
   .repos_folower {
-    width: 493px;
-  } */
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+
+  .navbar {
+    margin: 40px 0px 0px 0px;
+  }
 }
 
-/* @media screen and (max-width: 580px) {
+/*  */
+
+@media screen and (max-width: 620px) {
   .dark_mode {
     max-width: 327px;
     height: 38px;
@@ -448,122 +449,112 @@ main {
     height: 60px;
   }
 
+  .iput_box input {
+    padding-left: 7px;
+  }
+
+  .iput_box input::placeholder {
+    font-size: 13px;
+  }
+
   .Search_btn {
     width: 84px;
     height: 46px;
-    padding: 12px;
-    font-family: 'Space Mono', monospace;
     font-size: 14px;
-    font-weight: 700;
-    line-height: 20.73px;
-    text-align: center;
+    margin: 7px;
+    padding: 12px 12px 12px 12px;
   }
 
-  .position_absolute {
-    position: relative;
-    width: 70px;
-    height: 70px;
-    top: -200px;
-    left: -105px;
-    z-index: 1;
-    border: 2px solid black;
-  }
-
-  .users_foto {
-    width: 70px;
-    height: 70px;
-    position: absolute;
-    top: 0px;
-    left: -100px;
-    margin-left: 118px;
+  .iput_box img {
+    margin-left: 16px;
   }
 
   .info {
-    width: 327px;
-    min-height: 517px;
+    max-width: 327px;
+    margin-top: 16px;
+  }
+
+  .users_info_box {
+    margin: 0 auto;
+    padding: 32px 24px 48px 24px;
+  }
+
+  .users_info {
+    height: 117px;
+    justify-content: center;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .person_name h2 {
     font-size: 16px;
-    height: 24px;
-    margin-left: 90px;
-    margin-bottom: 4px;
+    line-height: 23.7px;
   }
 
   .person_name p {
-    height: 24px;
-    margin-left: 90px;
+    font-size: 13px;
+    line-height: 19.25px;
   }
 
-  .users_info_box {
-    padding: 32px 24px 48px 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .textContentInfo {
-    width: 275px;
-  }
-
-  .users_info {
-    width: 300px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-  }
-
-  .users_foto {
-    width: 70px;
-    height: 70px;
-    position: relative;
-    left: -120px;
-    bottom: 210px;
-  }
-
-  .users_info span {
-    width: auto;
-    height: 24px;
-    margin-top: 0px;
-    margin-left: 90px;
-    text-align: left;
+  .person_name > span {
+    font-size: 13px;
+    line-height: 19.25px;
   }
 
   .bio {
     width: 279px;
-    margin-top: 33px;
+    margin-top: 24px;
+    margin-left: 0px;
+    font-size: 13px;
   }
 
   .repos_folower {
     width: 279px;
-    margin-top: 23px;
-    justify-content: space-between;
   }
 
   .repos_folower ul {
-    margin-right: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  .repos_folower ul li:first-child {
-    width: 79px;
-    height: 48px;
-    margin-right: 10px;
+  .repos_folower ul li {
+    font-size: 11px;
+    line-height: 16.29px;
   }
 
-  .repos_folower ul li:last-child {
-    width: 89px;
-    height: 48px;
-    margin-left: 40px;
+  .repos_folower ul li > span {
+    font-size: 16px;
+    line-height: 23.7px;
+    text-align: center;
   }
 
+  .first_li {
+    margin-left: 15px;
+  }
+
+  .last_li {
+    margin-right: 15px;
+  }
   .navbar {
     min-width: 185px;
-    margin-top: 24px;
-    display: flex;
     flex-direction: column;
+  }
+
+  .navbar ul li {
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19.25px;
+    text-align: left;
+  }
+
+  .navbar ul li img {
+    margin-right: 20px;
   }
 
   .second_nav {
     margin-left: 0px;
   }
-} */
+}

@@ -30,6 +30,7 @@
                 <img src="./img/searchICON.svg" alt="searchICON" />
               </div>
               <input type="text" placeholder="Search GitHub username…" />
+              <div id="noinformation"></div>
               <button type="submit" class="Search_btn">Search</button>
             </div>
           </form>
@@ -38,20 +39,19 @@
               <div class="position_absolute gridBox_1">
                 <img src="./img/Oval.png" alt="users_img" class="users_foto" />
               </div>
-
               <div class="users_info gridBox_2">
                 <div class="person_name">
                   <div>
                     <h2 id="login">The Octocat</h2>
                     <p id="name">octocat</p>
                   </div>
-                  <span>Joined 25 Jan 2011</span>
+                  <span id="joindata">Joined 25 Jan 2011</span>
                 </div>
-                <p class="bio">
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  Donec odio. Quisque volutpat mattis eros.
-                </p>
               </div>
+              <p class="bio gridBox_3">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
+                odio. Quisque volutpat mattis eros.
+              </p>
               <div class="repos_folower gridBox_4">
                 <ul>
                   <li class="first_li">
@@ -74,9 +74,9 @@
                     <img src="./img/location.svg" alt="location" />
                     <span id="location">san francisoko</span>
                   </li>
-                  <li>
+                  <li id="githublink">
                     <img src="./img/link.svg" alt="link" />
-                    <a href="" id="githublink">svfgnhssvbtaervsfgtr</a>
+                    <!-- <a href="" id="githublink">svfgnhssvbtaervsfgtr</a> -->
                   </li>
                 </ul>
                 <ul class="second_nav">
@@ -86,7 +86,7 @@
                   </li>
                   <li>
                     <img src="./img/building.svg" alt="palace" />
-                    <span>github</span>
+                    <span id="workpalace">github</span>
                   </li>
                 </ul>
               </nav>
@@ -95,6 +95,6 @@
         </div>
       </div>
     </main>
-    <!-- <script src="./js/script.js"></script> -->
+    <script src="./js/script.js"></script>
   </body>
 </html>
