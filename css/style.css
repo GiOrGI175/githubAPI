@@ -111,6 +111,7 @@ main {
   text-align: left;
   color: var(--txtColor4);
   cursor: pointer;
+  outline: none;
 }
 
 .iput_box input::placeholder {
