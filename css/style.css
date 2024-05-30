@@ -183,6 +183,7 @@ main {
 }
 
 .info {
+  display: none;
   max-width: 730px;
   height: fit-content;
   border-radius: 15px;
@@ -369,6 +370,15 @@ main {
 }
 .atag:hover {
   text-decoration: underline;
+}
+
+.displayNone {
+  display: none;
+  color: white;
+}
+
+.displayBlock {
+  display: block !important;
 }
 
 /* js class */

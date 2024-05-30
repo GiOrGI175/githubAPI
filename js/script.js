@@ -1,5 +1,3 @@
-// let users = prompt('users');
-
 let formbox = document.querySelector('.form_box');
 
 formbox.addEventListener('submit', (e) => {
@@ -23,16 +21,25 @@ formbox.addEventListener('submit', (e) => {
     console.log(data);
 
     //! if no infomation [<
+    let noresult = document.getElementById('noinformation');
 
-    if (data.message === 'Not Found') {
-      let noresult = document.getElementById('noinformation');
+    let infpBox = document.querySelector('.info');
+    let noresulttxt = document.createElement('p');
+    noresulttxt.textContent = 'No results';
+    noresulttxt.classList.toggle('no_REsult');
 
-      let noresulttxt = document.createElement('p');
-      noresulttxt.textContent = 'No results';
-      noresulttxt.classList.add('no_REsult');
+    // if (data.message === 'Not Found') {
+    //   noresult.appendChild(noresulttxt);
 
-      noresult.appendChild(noresulttxt);
-    }
+    //   infpBox.classList.remove('displayBlock');
+    // } else {
+    //   infpBox.classList.add('displayBlock');
+
+    //   let containNoResult = document.querySelector('.no_REsult');
+    //   if (containNoResult) {
+    //     noresult.removeChild(existingNoResult);
+    //   }
+    // }
 
     //! if no infomation >]
 
@@ -161,7 +168,7 @@ formbox.addEventListener('submit', (e) => {
 
     // //! link [<
 
-    let link = document.createElement('a');
+    let link = document.querySelector('#atag');
     link.textContent = data.html_url;
     link.href = data.html_url;
     link.target = '_blank';
