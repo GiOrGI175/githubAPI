@@ -41,6 +41,7 @@ formbox.addEventListener('submit', (e) => {
     ) {
       infpBox.classList.remove('displayBlock');
       console.log('API DO NOT WORK');
+      noresulttxt.textContent = 'API DO NOT WORK';
     } else {
       infpBox.classList.add('displayBlock');
 
