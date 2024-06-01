@@ -157,9 +157,9 @@ formbox.addEventListener('submit', (e) => {
       let location = document.getElementById('location');
       if (data.location === null) {
         location.textContent = 'not avaible';
-        location.classList.toggle('notAvaible');
+        location.classList.add('notAvaible');
         let img = document.querySelector('.location');
-        img.classList.toggle('notAvaible');
+        img.classList.add('notAvaible');
       } else {
         location.textContent = data.location;
       }
@@ -171,9 +171,9 @@ formbox.addEventListener('submit', (e) => {
       let twit = document.getElementById('twiter');
       if (data.twitter_username === null) {
         twit.textContent = 'not avaible';
-        twit.classList.toggle('notAvaible');
+        twit.classList.add('notAvaible');
         let img = document.querySelector('.twitter');
-        img.classList.toggle('notAvaible');
+        img.classList.add('notAvaible');
         // notAvaible
       } else {
         twit.textContent = data.twitter_username;
@@ -199,9 +199,9 @@ formbox.addEventListener('submit', (e) => {
       let workpalace = document.getElementById('workpalace');
       if (data.company === null) {
         workpalace.textContent = 'not avaible';
-        workpalace.classList.toggle('notAvaible');
+        workpalace.classList.add('notAvaible');
         let img = document.querySelector('.palace');
-        img.classList.toggle('notAvaible');
+        img.classList.add('notAvaible');
       } else {
         workpalace.textContent = data.company;
       }
