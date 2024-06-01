@@ -5,8 +5,12 @@
 }
 
 :root {
+  --docDark: #141d2f;
+  --divDark: #1e2a47;
+  --txtDark: #ffffff;
   --txtColor: #697c9a;
   --txtColor2: #4b6a9b;
+  --inputColor: #4b6a9b;
   --txtColor3: #222731;
   --txtColor4: #222731;
   --txtColor5: #2b3442;
@@ -121,7 +125,7 @@ main {
   font-weight: 400;
   line-height: 25px;
   text-align: left;
-  color: var(--txtColor2);
+  color: var(--inputColor);
 }
 
 .Search_btn {
@@ -389,6 +393,18 @@ main {
 
 .displayBlock {
   display: block !important;
+}
+
+.document_darj_mode {
+  background-color: var(--docDark);
+}
+
+.div_dark {
+  background-color: var(--divDark);
+}
+
+.txt_dark {
+  color: var(--txtDark) !important;
 }
 
 /* js class */

@@ -235,3 +235,24 @@ moonBox.addEventListener('mouseleave', () => {
     moonimg.src = './img/moon.svg';
   }, 700);
 });
+
+moonBox.addEventListener('click', () => {
+  document.body.classList.toggle('document_darj_mode');
+
+  let infoDiv = document.querySelector('.info');
+  infoDiv.classList.toggle('div_dark');
+
+  let inputBox = document.querySelector('.iput_box');
+  inputBox.classList.toggle('div_dark');
+
+  let holder = document.getElementById('user');
+  holder.classList.toggle('txt_dark');
+
+  let ulDiv = document.querySelector('.repos_folower');
+  ulDiv.classList.toggle('document_darj_mode');
+
+  let txtdarkmode = Array.from(document.querySelectorAll('.DarkMode'));
+  txtdarkmode.forEach((index) => {
+    index.classList.toggle('txt_dark');
+  });
+});
