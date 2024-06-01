@@ -236,6 +236,27 @@ moonBox.addEventListener('mouseleave', () => {
   }, 700);
 });
 
+if (localStorage.getItem('them') === 'dark') {
+  document.body.classList.toggle('document_darj_mode');
+
+  let infoDiv = document.querySelector('.info');
+  infoDiv.classList.toggle('div_dark');
+
+  let inputBox = document.querySelector('.iput_box');
+  inputBox.classList.toggle('div_dark');
+
+  let holder = document.getElementById('user');
+  holder.classList.toggle('txt_dark');
+
+  let ulDiv = document.querySelector('.repos_folower');
+  ulDiv.classList.toggle('document_darj_mode');
+
+  let txtdarkmode = Array.from(document.querySelectorAll('.DarkMode'));
+  txtdarkmode.forEach((index) => {
+    index.classList.toggle('txt_dark');
+  });
+}
+
 moonBox.addEventListener('click', () => {
   document.body.classList.toggle('document_darj_mode');
 
@@ -255,4 +276,9 @@ moonBox.addEventListener('click', () => {
   txtdarkmode.forEach((index) => {
     index.classList.toggle('txt_dark');
   });
+
+  localStorage.setItem(
+    'them',
+    document.body.classList.contains('document_darj_mode') ? 'dark' : 'light'
+  );
 });
