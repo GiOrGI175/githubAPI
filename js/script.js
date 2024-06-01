@@ -30,6 +30,7 @@ formbox.addEventListener('submit', (e) => {
     let infpBox = document.querySelector('.info');
 
     if (data.message === 'Not Found') {
+      noresulttxt.classList.add('no_REsultDislay');
       noresulttxt.textContent = 'No results';
 
       infpBox.classList.remove('displayBlock');
@@ -41,6 +42,7 @@ formbox.addEventListener('submit', (e) => {
     ) {
       infpBox.classList.remove('displayBlock');
       console.log('API DO NOT WORK');
+      noresulttxt.classList.add('no_REsultDislay');
       noresulttxt.textContent = 'API DO NOT WORK';
     } else {
       infpBox.classList.add('displayBlock');
@@ -155,6 +157,9 @@ formbox.addEventListener('submit', (e) => {
       let location = document.getElementById('location');
       if (data.location === null) {
         location.textContent = 'not avaible';
+        location.classList.toggle('notAvaible');
+        let img = document.querySelector('.location');
+        img.classList.toggle('notAvaible');
       } else {
         location.textContent = data.location;
       }
@@ -166,6 +171,10 @@ formbox.addEventListener('submit', (e) => {
       let twit = document.getElementById('twiter');
       if (data.twitter_username === null) {
         twit.textContent = 'not avaible';
+        twit.classList.toggle('notAvaible');
+        let img = document.querySelector('.twitter');
+        img.classList.toggle('notAvaible');
+        // notAvaible
       } else {
         twit.textContent = data.twitter_username;
       }
@@ -188,7 +197,14 @@ formbox.addEventListener('submit', (e) => {
       // //! workpalace [<
 
       let workpalace = document.getElementById('workpalace');
-      workpalace.textContent = data.company;
+      if (data.company === null) {
+        workpalace.textContent = 'not avaible';
+        workpalace.classList.toggle('notAvaible');
+        let img = document.querySelector('.palace');
+        img.classList.toggle('notAvaible');
+      } else {
+        workpalace.textContent = data.company;
+      }
 
       // //! workpalace [<
 
@@ -198,6 +214,8 @@ formbox.addEventListener('submit', (e) => {
   githubusers();
 
   users = username.value = '';
+
+  noresulttxt.classList.remove('no_REsultDislay');
 });
 
 let moonBox = document.getElementById('moonbox');

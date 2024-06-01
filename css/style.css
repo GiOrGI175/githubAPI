@@ -16,6 +16,7 @@
   --whiteColor2: #f6f8ff;
   --btnColor: #0079ff;
   --btnHoverColor: #60abff;
+  --notavaibleColor: #4b6a9b;
   --red: #f74646;
 }
 
@@ -355,6 +356,7 @@ main {
 /* js class */
 
 .no_REsult {
+  display: none;
   width: 100px;
   font-family: 'Space Mono';
   font-size: 15px;
@@ -362,6 +364,14 @@ main {
   line-height: 22.22px;
   text-align: center;
   color: var(--red);
+}
+.no_REsultDislay {
+  display: block !important;
+}
+
+.notAvaible {
+  color: var(--notavaibleColor);
+  opacity: 0.7;
 }
 
 .atag {
