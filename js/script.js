@@ -223,17 +223,43 @@ let moonBox = document.getElementById('moonbox');
 moonBox.addEventListener('mouseenter', () => {
   let moonimg = document.querySelector('.logo');
 
-  setTimeout(() => {
+  let mytimeout = setTimeout(() => {
     moonimg.src = './img/darkMoon.svg';
+
+    themtxt.classList.add('them_box:hover');
   }, 700);
+
+  if (document.body.classList.contains('document_darj_mode')) {
+    setTimeout(() => {
+      moonimg.src = './img/opacitysun.svg';
+
+      themtxt.classList.add('light_opacity');
+    }, 700);
+
+    clearTimeout(mytimeout);
+  }
 });
 
-moonBox.addEventListener('mouseleave', () => {
+let moonBox2 = document.getElementById('moonbox');
+
+moonBox2.addEventListener('mouseleave', () => {
   let moonimg = document.querySelector('.logo');
 
-  setTimeout(() => {
+  let mytimeout = setTimeout(() => {
     moonimg.src = './img/moon.svg';
+
+    themtxt.classList.remove('them_box:hover');
   }, 700);
+
+  if (document.body.classList.contains('document_darj_mode')) {
+    setTimeout(() => {
+      moonimg.src = './img/sun.svg';
+
+      themtxt.classList.remove('light_opacity');
+    }, 700);
+
+    clearTimeout(mytimeout);
+  }
 });
 
 if (localStorage.getItem('them') === 'dark') {
@@ -257,7 +283,17 @@ if (localStorage.getItem('them') === 'dark') {
   });
 }
 
-moonBox.addEventListener('click', () => {
+let moonBox3 = document.getElementById('moonbox');
+
+moonBox3.addEventListener('click', () => {
+  let themtxt = document.getElementById('themtxt');
+
+  if (themtxt.textContent === 'DARK') {
+    themtxt.textContent = 'LIGHT';
+  } else {
+    themtxt.textContent = 'DARK';
+  }
+
   document.body.classList.toggle('document_darj_mode');
 
   let infoDiv = document.querySelector('.info');

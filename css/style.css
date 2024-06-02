@@ -75,7 +75,7 @@ main {
   transition-delay: 0.1s;
   transition-timing-function: ease;
 }
-.dark_mode .them_box:hover {
+.them_box:hover {
   color: var(--txtColor3);
 }
 
@@ -375,6 +375,15 @@ main {
 
 .notAvaible {
   color: var(--notavaibleColor);
+  opacity: 0.7;
+}
+
+.dark_opacity {
+  color: var(--btnHoverColor);
+}
+
+.light_opacity {
+  color: #90a4d4;
   opacity: 0.7;
 }
 
