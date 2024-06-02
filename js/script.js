@@ -225,15 +225,13 @@ moonBox.addEventListener('mouseenter', () => {
 
   let mytimeout = setTimeout(() => {
     moonimg.src = './img/darkMoon.svg';
-
-    themtxt.classList.add('them_box:hover');
   }, 700);
 
   if (document.body.classList.contains('document_darj_mode')) {
     setTimeout(() => {
       moonimg.src = './img/opacitysun.svg';
 
-      themtxt.classList.add('light_opacity');
+      themtxt.classList.add('notAvaible');
     }, 700);
 
     clearTimeout(mytimeout);
@@ -247,15 +245,13 @@ moonBox2.addEventListener('mouseleave', () => {
 
   let mytimeout = setTimeout(() => {
     moonimg.src = './img/moon.svg';
-
-    themtxt.classList.remove('them_box:hover');
   }, 700);
 
   if (document.body.classList.contains('document_darj_mode')) {
     setTimeout(() => {
       moonimg.src = './img/sun.svg';
 
-      themtxt.classList.remove('light_opacity');
+      themtxt.classList.remove('notAvaible');
     }, 700);
 
     clearTimeout(mytimeout);
@@ -293,6 +289,7 @@ moonBox3.addEventListener('click', () => {
   } else {
     themtxt.textContent = 'DARK';
   }
+  // რადგან იქონები არ მქოდნა ეს ესე დავწერ სურთს ვერ დავდე თვითონ ოპასით თან კოდის წეარაშ ვარჯიშიც გამომივიდა
 
   document.body.classList.toggle('document_darj_mode');
 
