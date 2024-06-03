@@ -284,11 +284,6 @@ let moonBox3 = document.getElementById('moonbox');
 moonBox3.addEventListener('click', () => {
   let themtxt = document.getElementById('themtxt');
 
-  if (themtxt.textContent === 'DARK') {
-    themtxt.textContent = 'LIGHT';
-  } else {
-    themtxt.textContent = 'DARK';
-  }
   // რადგან იქონები არ მქოდნა ეს ესე დავწერ სურთს ვერ დავდე თვითონ ოპასით თან კოდის წეარაშ ვარჯიშიც გამომივიდა
 
   document.body.classList.toggle('document_darj_mode');
@@ -308,6 +303,12 @@ moonBox3.addEventListener('click', () => {
   let txtdarkmode = Array.from(document.querySelectorAll('.DarkMode'));
   txtdarkmode.forEach((index) => {
     index.classList.toggle('txt_dark');
+
+    if (document.body.classList.contains('document_darj_mode')) {
+      themtxt.textContent = 'LIGHT';
+    } else {
+      themtxt.textContent = 'DARK';
+    }
   });
 
   localStorage.setItem(
